@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1nf8as68e4me"]
+
+[ext_resource type="Texture2D" uid="uid://dqob54yb43a8j" path="res://sprites/game-sprites-master/grid_based/obstacle.svg" id="1_i4whm"]
+
+[node name="Link" type="Sprite2D"]
+z_index = -1
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_i4whm")

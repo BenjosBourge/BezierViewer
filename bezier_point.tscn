@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://0d1id16mws2a"]
+
+[ext_resource type="Script" path="res://BezierPoint.gd" id="1_b3crr"]
+[ext_resource type="Texture2D" uid="uid://bxuomo6hbdl5" path="res://sprites/game-sprites-master/grid_based/path_end.svg" id="2_22dr8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tyjna"]
+size = Vector2(128, 128)
+
+[node name="Bezier_Point" type="StaticBody2D"]
+position = Vector2(291, 204)
+scale = Vector2(0.305, 0.305)
+input_pickable = true
+script = ExtResource("1_b3crr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_tyjna")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_22dr8")
