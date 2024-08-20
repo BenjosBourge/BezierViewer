@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6jv4kns5ts0h"]
+
+[ext_resource type="Texture2D" uid="uid://bhka7oplniwij" path="res://sprites/game-sprites-master/grid_based/character.svg" id="1_roljg"]
+[ext_resource type="Script" path="res://steps.gd" id="2_y6hby"]
+
+[node name="steps" type="Sprite2D"]
+z_index = -2
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_roljg")
+script = ExtResource("2_y6hby")

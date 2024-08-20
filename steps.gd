@@ -1,4 +1,5 @@
-extends MovableObject
+extends Sprite2D
+
 
 var next_point = null
 
@@ -8,7 +9,6 @@ var connection = preload("res://link.tscn")
 
 
 func _process(delta):
-	super._process(delta)
 	if link != null and next_point != null:
 		link.transform.origin = transform.origin + (next_point.transform.origin - transform.origin)/2
 		link.look_at(next_point.transform.origin)

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3tfm2nmbj3iq"]
+
+[ext_resource type="Texture2D" uid="uid://cwe6gifrs3qtb" path="res://sprites/game-sprites-master/grid_based/path_start.svg" id="1_djlof"]
+[ext_resource type="Script" path="res://steps.gd" id="2_m02tt"]
+
+[node name="steps" type="Sprite2D"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_djlof")
+script = ExtResource("2_m02tt")
